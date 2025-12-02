@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Site de Teste Vercel - Firulas Máximas!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background Particles -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-logo">
+            <span class="logo-icon">🎨</span>
+            <span class="logo-text gradient-text">Firulas</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#cards" class="nav-link">Cards</a></li>
+            <li><a href="#contact" class="nav-link">Contato</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="toggle-icon">🌙</span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-bounce">✨ Testando Deploy na Vercel</div>
+            <h1 class="hero-title">
+                <span class="title-line">Site de Teste</span>
+                <span class="title-line gradient-text animated-gradient">Com Muitas Firulas!</span>
+            </h1>
+            <p class="hero-subtitle typewriter">Animações, efeitos visuais, gradientes e muito mais...</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary pulse-glow">
+                    <span>🚀 Explorar</span>
+                </button>
+                <button class="btn btn-secondary glass-effect">
+                    <span>📖 Saiba Mais</span>
+                </button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card main-card">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="emoji-stack">
+                        <span class="emoji-item animate-float" style="--delay: 0s">🎉</span>
+                        <span class="emoji-item animate-float" style="--delay: 0.2s">🎨</span>
+                        <span class="emoji-item animate-float" style="--delay: 0.4s">✨</span>
+                        <span class="emoji-item animate-float" style="--delay: 0.6s">🌟</span>
+                        <span class="emoji-item animate-float" style="--delay: 0.8s">💫</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-header">
+            <span class="section-badge">✨ Features</span>
+            <h2 class="section-title">O Que Temos Aqui?</h2>
+            <p class="section-subtitle">Todas as firulas que você pode imaginar!</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card glass-effect hover-lift">
+                <div class="feature-icon rainbow-bg">🎨</div>
+                <h3 class="feature-title">Gradientes Lindos</h3>
+                <p class="feature-desc">Cores que mudam suavemente e criam efeitos visuais incríveis.</p>
+            </div>
+            <div class="feature-card glass-effect hover-lift">
+                <div class="feature-icon rainbow-bg">💫</div>
+                <h3 class="feature-title">Animações CSS</h3>
+                <p class="feature-desc">Elementos que flutuam, pulsam e se movem pela tela.</p>
+            </div>
+            <div class="feature-card glass-effect hover-lift">
+                <div class="feature-icon rainbow-bg">🌈</div>
+                <h3 class="feature-title">Efeito Glassmorphism</h3>
+                <p class="feature-desc">Cards com efeito de vidro fosco super modernos.</p>
+            </div>
+            <div class="feature-card glass-effect hover-lift">
+                <div class="feature-icon rainbow-bg">🌙</div>
+                <h3 class="feature-title">Modo Escuro</h3>
+                <p class="feature-desc">Alterne entre tema claro e escuro com um clique.</p>
+            </div>
+            <div class="feature-card glass-effect hover-lift">
+                <div class="feature-icon rainbow-bg">🎯</div>
+                <h3 class="feature-title">Efeitos Hover</h3>
+                <p class="feature-desc">Interações suaves quando você passa o mouse.</p>
+            </div>
+            <div class="feature-card glass-effect hover-lift">
+                <div class="feature-icon rainbow-bg">📱</div>
+                <h3 class="feature-title">Responsivo</h3>
+                <p class="feature-desc">Funciona perfeitamente em qualquer dispositivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="cards" class="cards-section">
+        <div class="section-header">
+            <span class="section-badge">🃏 Cards</span>
+            <h2 class="section-title">Cards Interativos</h2>
+            <p class="section-subtitle">Passe o mouse para ver a mágica acontecer!</p>
+        </div>
+        <div class="cards-grid">
+            <div class="interactive-card card-3d">
+                <div class="card-shine"></div>
+                <div class="card-border-glow"></div>
+                <div class="card-inner">
+                    <div class="card-icon">🚀</div>
+                    <h3>Performance</h3>
+                    <p>Site super rápido com deploy instantâneo na Vercel!</p>
+                    <div class="card-stats">
+                        <span class="stat">
+                            <span class="stat-value counter" data-target="100">0</span>%
+                            <span class="stat-label">Otimizado</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="interactive-card card-3d">
+                <div class="card-shine"></div>
+                <div class="card-border-glow"></div>
+                <div class="card-inner">
+                    <div class="card-icon">🎨</div>
+                    <h3>Design</h3>
+                    <p>Visual moderno com as últimas tendências de UI/UX!</p>
+                    <div class="card-stats">
+                        <span class="stat">
+                            <span class="stat-value counter" data-target="99">0</span>%
+                            <span class="stat-label">Bonito</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="interactive-card card-3d">
+                <div class="card-shine"></div>
+                <div class="card-border-glow"></div>
+                <div class="card-inner">
+                    <div class="card-icon">⚡</div>
+                    <h3>Velocidade</h3>
+                    <p>Carregamento instantâneo com CDN global da Vercel!</p>
+                    <div class="card-stats">
+                        <span class="stat">
+                            <span class="stat-value counter" data-target="150">0</span>ms
+                            <span class="stat-label">TTFB</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>✨ FIRULAS</span>
+                <span>🎨 DESIGN</span>
+                <span>🚀 VERCEL</span>
+                <span>💫 ANIMAÇÕES</span>
+                <span>🌈 CORES</span>
+                <span>🎉 DEPLOY</span>
+                <span>✨ FIRULAS</span>
+                <span>🎨 DESIGN</span>
+                <span>🚀 VERCEL</span>
+                <span>💫 ANIMAÇÕES</span>
+                <span>🌈 CORES</span>
+                <span>🎉 DEPLOY</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number gradient-text counter" data-target="1000">0</div>
+                <div class="stat-label">Linhas de CSS</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number gradient-text counter" data-target="50">0</div>
+                <div class="stat-label">Animações</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number gradient-text counter" data-target="100">0</div>
+                <div class="stat-label">% Firulas</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number gradient-text">∞</div>
+                <div class="stat-label">Criatividade</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <span class="section-badge">📬 Contato</span>
+            <h2 class="section-title">Fale Conosco</h2>
+            <p class="section-subtitle">Este é um site de teste, mas o formulário é bonito!</p>
+        </div>
+        <form class="contact-form glass-effect">
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder=" " id="name" required>
+                <label for="name" class="form-label">Seu Nome</label>
+                <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-input" placeholder=" " id="email" required>
+                <label for="email" class="form-label">Seu Email</label>
+                <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+                <textarea class="form-input form-textarea" placeholder=" " id="message" required></textarea>
+                <label for="message" class="form-label">Sua Mensagem</label>
+                <div class="form-line"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full ripple">
+                <span>🚀 Enviar Mensagem</span>
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">🎨</span>
+                <span class="gradient-text">Firulas</span>
+            </div>
+            <p class="footer-text">Feito com 💜 para testar deploy na Vercel</p>
+            <div class="social-links">
+                <a href="#" class="social-link hover-lift">🐙</a>
+                <a href="#" class="social-link hover-lift">🐦</a>
+                <a href="#" class="social-link hover-lift">💼</a>
+                <a href="#" class="social-link hover-lift">📸</a>
+            </div>
+            <div class="footer-wave">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="currentColor"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="currentColor"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,googletag172.46-45.71,248.8-84.81V0Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Site de Teste - Firulas Máximas! 🎉</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top glass-effect" id="scrollTop" aria-label="Scroll to top">
+        <span>⬆️</span>
+    </button>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <span class="loader-text">Carregando Firulas...</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
