@@ -1066,7 +1066,9 @@ body {
 
 .loader {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: var(--space-lg);
 }
@@ -1093,12 +1095,6 @@ body {
     font-weight: 600;
     color: var(--text-secondary);
     animation: pulse 1.5s ease-in-out infinite;
-}
-
-.loader {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 /* ========== Responsive Design ========== */
